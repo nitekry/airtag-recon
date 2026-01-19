@@ -1,6 +1,6 @@
 # ble_airtag_sniff
 
-## <font color="red">THIS IS ONLY A TEST NOT A FUNCTIONAL SCANNER!!!</font>
+## ⚠️ THIS IS ONLY A TEST NOT A FUNCTIONAL SCANNER!!!⚠️
 
 A small Python tool to scan **BLE advertisements** and detect **Apple manufacturer-specific** frames that look like **AirTag / Find My** beacons.
 
