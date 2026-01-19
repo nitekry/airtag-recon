@@ -1,5 +1,7 @@
 # ble_airtag_sniff
 
+## <font color="red">THIS IS ONLY A TEST NOT A FUNCTIONAL SCANNER!!!</font>
+
 A small Python tool to scan **BLE advertisements** and detect **Apple manufacturer-specific** frames that look like **AirTag / Find My** beacons.
 
 It focuses on BLE **Manufacturer Specific Data** (AD type `0xFF`) and applies a simple heuristic:
