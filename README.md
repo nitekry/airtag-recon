@@ -79,3 +79,26 @@ python3 airtag_sniff.py --duration 900 --print-on-change --change-field tail --d
 [AIRTAG?] CHANGED(FIRST) D1E8A9FB-8EAE-E4E7-29AC-C6CE26C26AEA RSSI: -95 type:0x12 len:0x19 adlen:0x1E hdr2:003F blk16:D212AF963B19FA956389B769705A339E tail:3A5B88561B0300 fp_full:bae1f3614ff4 fp_blk16:71331ec7b4a5 fp_tail:84b1ea3d18fb mfg:1219003FD212AF963B19FA956389B769705A339E3A5B88561B0300
 ```
 ## Copy and paste these to a text file or something like pastebin and send to me in Discord. OrdoOuroborus
+
+---
+
+## Adding confidence detector airtag_sniff_v02.py
+### Basic high-confidence scan
+```bash
+python airtag_sniff_v02.py --min-confidence 0.8
+```
+
+### Verbose with all details
+```bash
+python airtag_sniff_v02.py --verbose
+```
+
+### Only show when public key rotates
+```bash
+python airtag_sniff_v02.py --print-on-change --change-field blk16
+```
+
+### Debug mode - see all Apple devices
+```bash
+python airtag_sniff_v02.py --show-all-apple --verbose --min-confidence 0.3
+```
